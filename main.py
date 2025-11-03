@@ -27,7 +27,7 @@ def add_product(product:product):
     products.append(product)
     return products 
 
-@app.update("/product")
+@app.put("/product")
 def update_product(id:int ,product:product):
     for i in range (len(products)):
         if products[0].id ==product:
